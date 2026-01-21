@@ -34,7 +34,6 @@ export default function ArticleCarousel({ articles }: ArticleCarouselProps) {
 
     // Get visible items based on screen size
     const getVisibleItems = () => {
-        // Desktop: 3 items, Tablet: 2 items, Mobile: 1 item
         const visibleItems = [];
 
         for (let i = 0; i < 3; i++) {
@@ -76,7 +75,7 @@ export default function ArticleCarousel({ articles }: ArticleCarouselProps) {
                             className={`flex gap-3 min-w-0 flex-1 ${index === 0 ? 'flex' : 'hidden md:flex'
                                 } ${index === 2 ? 'hidden lg:flex' : ''}`}
                             style={{
-                                animation: 'slideInFromRight 0.5s ease-in-out'
+                                animation: 'slideInFromRight 0.5s ease-out'
                             }}
                         >
                             <img
@@ -113,16 +112,14 @@ export default function ArticleCarousel({ articles }: ArticleCarouselProps) {
                 </button>
             </div>
 
-            {/* CSS Animation */}
+            {/* CSS Animation - Only transform, no opacity */}
             <style jsx>{`
                 @keyframes slideInFromRight {
                     from {
                         transform: translateX(100%);
-                        opacity: 0;
                     }
                     to {
                         transform: translateX(0);
-                        opacity: 1;
                     }
                 }
             `}</style>
