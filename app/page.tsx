@@ -13,17 +13,17 @@ import BannerAd from '../components/BannerAd';
 const carouselArticles = [
   {
     id: 1,
-    image: '/api/placeholder/80/80',
+    image: 'https://jnews.io/citynews/wp-content/uploads/sites/47/2018/06/demo-14-1-75x75.jpg',
     title: 'The Chinese smartphone upstarts taking on Apple and Samsung'
   },
   {
     id: 2,
-    image: '/api/placeholder/80/80',
+    image: 'https://jnews.io/citynews/wp-content/uploads/sites/47/2018/06/demo-21-75x75.jpg',
     title: 'Presidential Train Now Available For Jakartans Traveling To Bandung'
   },
   {
     id: 3,
-    image: '/api/placeholder/80/80',
+    image: 'https://jnews.io/citynews/wp-content/uploads/sites/47/2018/06/demo-15-75x75.jpg',
     title: 'A Digital Media Startup Growing Up With Millennial Women'
   }
 ];
