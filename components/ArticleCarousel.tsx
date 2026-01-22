@@ -68,12 +68,12 @@ export default function ArticleCarousel({ articles }: ArticleCarouselProps) {
                 </button>
 
                 {/* Carousel Items Container */}
-                <div className="flex gap-4 md:gap-5 lg:gap-6 overflow-hidden flex-1">
+                <div className="flex gap-4 xs:gap-5 sm-md:gap-6 overflow-hidden flex-1">
                     {visibleItems.map((article, index) => (
                         <div
                             key={`${article.id}-${currentIndex}-${index}`}
-                            className={`flex gap-3 min-w-0 flex-1 ${index === 0 ? 'flex' : 'hidden md:flex'
-                                } ${index === 2 ? 'hidden lg:flex' : ''}`}
+                            className={`flex gap-3 min-w-0 flex-1 ${index === 0 ? 'flex' : 'hidden xs:flex'
+                                } ${index === 2 ? 'hidden sm-md:flex' : ''}`}
                             style={{
                                 animation: 'slideInFromRight 0.5s ease-out'
                             }}
@@ -81,10 +81,10 @@ export default function ArticleCarousel({ articles }: ArticleCarouselProps) {
                             <img
                                 src={article.image}
                                 alt=""
-                                className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 object-cover flex-shrink-0"
+                                className="w-12 h-12 xs:w-14 xs:h-14 sm-md:w-16 sm-md:h-16 object-cover flex-shrink-0"
                             />
                             <p
-                                className="text-xs lg:text-sm leading-tight line-clamp-4 font-normal"
+                                className="text-xs sm-md:text-sm leading-tight line-clamp-4 font-normal"
                                 style={{ color: '#010101' }}
                             >
                                 {article.title}
