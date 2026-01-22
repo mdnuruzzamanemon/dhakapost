@@ -13,10 +13,13 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         <>
             {/* Backdrop */}
             <div
-                className={`fixed inset-0 bg-black bg-opacity-50 z-50 lg:hidden transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
-                    }`}
+                className={`fixed inset-0 z-50 lg:hidden transition-opacity duration-300
+                ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}
+                bg-black/30 backdrop-blur-md
+            `}
                 onClick={onClose}
             />
+
 
             {/* Sidebar */}
             <div
@@ -87,7 +90,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
                     {/* Footer Text */}
                     <div className="text-xs text-gray-500">
-                        © 2026 JNews - Premium WordPress news & magazine theme by Jegtheme.
+                        © 2026 Md Nuruzzaman Emon
                     </div>
                 </div>
             </div>
