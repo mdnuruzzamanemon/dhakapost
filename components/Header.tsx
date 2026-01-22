@@ -55,7 +55,7 @@ export default function Header({ onMenuToggle }: HeaderProps) {
                 }}
             >
                 <div className="max-w-7xl mx-auto px-4">
-                    <ul className="flex items-center justify-center space-x-8 py-3.5 text-[13px] font-bold tracking-wide" style={{ color: '#010101' }}>
+                    <ul className="flex items-center justify-center space-x-6 py-3.5 text-[14px] font-bold tracking-wide" style={{ color: '#010101' }}>
                         {/* HOME with Dropdown */}
                         <li
                             className="relative group"
@@ -71,7 +71,7 @@ export default function Header({ onMenuToggle }: HeaderProps) {
                                     <path d="M0 0L4 5L8 0H0Z" />
                                 </svg>
                                 {/* Animated bottom border */}
-                                <span className="absolute bottom-0 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101' }}></span>
+                                <span className="absolute bottom-0 left-0 w-0 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101', height: '1.5px' }}></span>
                             </a>
 
                             {/* Dropdown Menu */}
@@ -119,49 +119,49 @@ export default function Header({ onMenuToggle }: HeaderProps) {
                         <li className="group">
                             <a href="#" className="relative pb-1 block">
                                 NEWS
-                                <span className="absolute bottom-0 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101' }}></span>
+                                <span className="absolute bottom-0 left-0 w-0 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101', height: '1.5px' }}></span>
                             </a>
                         </li>
                         <li className="group">
                             <a href="#" className="relative pb-1 block">
                                 POLITICS
-                                <span className="absolute bottom-0 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101' }}></span>
+                                <span className="absolute bottom-0 left-0 w-0 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101', height: '1.5px' }}></span>
                             </a>
                         </li>
                         <li className="group">
                             <a href="#" className="relative pb-1 block">
                                 BUSINESS
-                                <span className="absolute bottom-0 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101' }}></span>
+                                <span className="absolute bottom-0 left-0 w-0 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101', height: '1.5px' }}></span>
                             </a>
                         </li>
                         <li className="group">
                             <a href="#" className="relative pb-1 block">
                                 NATIONAL
-                                <span className="absolute bottom-0 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101' }}></span>
+                                <span className="absolute bottom-0 left-0 w-0 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101', height: '1.5px' }}></span>
                             </a>
                         </li>
                         <li className="group">
                             <a href="#" className="relative pb-1 block">
                                 CULTURE
-                                <span className="absolute bottom-0 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101' }}></span>
+                                <span className="absolute bottom-0 left-0 w-0 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101', height: '1.5px' }}></span>
                             </a>
                         </li>
                         <li className="group">
                             <a href="#" className="relative pb-1 block">
                                 OPINION
-                                <span className="absolute bottom-0 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101' }}></span>
+                                <span className="absolute bottom-0 left-0 w-0 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101', height: '1.5px' }}></span>
                             </a>
                         </li>
                         <li className="group">
                             <a href="#" className="relative pb-1 block">
                                 LIFESTYLE
-                                <span className="absolute bottom-0 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101' }}></span>
+                                <span className="absolute bottom-0 left-0 w-0 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101', height: '1.5px' }}></span>
                             </a>
                         </li>
                         <li className="group">
                             <a href="#" className="relative pb-1 block">
                                 SPORTS
-                                <span className="absolute bottom-0 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101' }}></span>
+                                <span className="absolute bottom-0 left-0 w-0 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#010101', height: '1.5px' }}></span>
                             </a>
                         </li>
                     </ul>
