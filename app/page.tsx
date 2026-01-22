@@ -131,12 +131,12 @@ export default function Home() {
           {/* Right Sidebar */}
           <aside className="lg:col-span-3">
             {/* Banner Ad */}
-            <div className="mb-6">
+            {/* <div className="mb-6">
               <BannerAd
                 image="https://jnews.io/citynews/wp-content/uploads/sites/47/2018/08/banner-ad-345x345.jpg"
                 title="Banner Ads"
               />
-            </div>
+            </div> */}
 
             {/* Right Sidebar Articles - 2 columns on tablet, 1 on mobile */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
