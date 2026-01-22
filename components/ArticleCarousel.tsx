@@ -47,7 +47,7 @@ export default function ArticleCarousel({ articles }: ArticleCarouselProps) {
     const visibleItems = getVisibleItems();
 
     return (
-        <div className="bg-white p-4 lg:p-6 mb-6 lg:mb-8">
+        <div className="bg-white p-4 lg:p-6 mb-6 lg:mb-8 shadow-sm">
             <div className="flex items-center gap-2">
                 {/* Previous Button */}
                 <button

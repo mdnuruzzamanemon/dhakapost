@@ -9,7 +9,7 @@ interface OpinionSidebarProps {
 
 export default function OpinionSidebar({ articles }: OpinionSidebarProps) {
     return (
-        <div className="bg-white p-5 shadow-lg">
+        <div className="bg-white p-5 shadow-sm">
             <SectionHeading title="Opinion" />
             <ul className="mt-6">
                 {articles.map((article, index) => (

@@ -15,7 +15,7 @@ interface LatestArticlesSidebarProps {
 
 export default function LatestArticlesSidebar({ articles }: LatestArticlesSidebarProps) {
     return (
-        <div className="bg-white p-5 mb-6 shadow-lg">
+        <div className="bg-white p-5 mb-6 shadow-sm">
             <SectionHeading title="The Latest" />
             <div className="space-y-4 mt-6">
                 {articles.map(article => (

@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import MobileMenu from '../components/MobileMenu';
 import ArticleCarousel from '../components/ArticleCarousel';
 import ArticleCard from '../components/ArticleCard';
+import CompactArticleCard from '../components/CompactArticleCard';
 import LatestArticlesSidebar from '../components/LatestArticlesSidebar';
 import OpinionSidebar from '../components/OpinionSidebar';
 import BannerAd from '../components/BannerAd';
@@ -105,57 +106,64 @@ export default function Home() {
             />
 
             {/* Bottom Articles Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <ArticleCard
-                variant="standard"
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <CompactArticleCard
                 category="BUSINESS"
                 categoryColor="#2563eb"
                 title="Grab tackles Jakarta's odd-even license plate policy with special algorithm"
                 author="JOHN DOE"
                 date="February 17, 2020"
-                image="/api/placeholder/400/250"
+                excerpt=""
+                image="https://jnews.io/citynews/wp-content/uploads/sites/47/2018/07/demo-2-350x250.jpg"
               />
-              <ArticleCard
-                variant="standard"
-                title="Indonesia To Offer Infrastructure Projects At IMF-World Bank Meeting"
+              <CompactArticleCard
+                category="POLITICS"
+                categoryColor="#D3302F"
+                title="Jokowi supporters try to prevent anti-Jokowi activist from entering Batam"
                 author="JOHN DOE"
-                date="February 17, 2020"
-                image="/api/placeholder/400/250"
+                date="August 10, 2018"
+                excerpt=""
+                image="https://jnews.io/citynews/wp-content/uploads/sites/47/2018/07/demo-12-350x250.jpg"
               />
             </div>
           </main>
 
           {/* Right Sidebar */}
-          <aside className="lg:col-span-3 space-y-6">
+          <aside className="lg:col-span-3">
             {/* Banner Ad */}
-            <BannerAd
-              image="https://jnews.io/citynews/wp-content/uploads/sites/47/2018/08/banner-ad-345x345.jpg"
-              title="Banner Ads"
-            />
+            <div className="mb-6">
+              <BannerAd
+                image="https://jnews.io/citynews/wp-content/uploads/sites/47/2018/08/banner-ad-345x345.jpg"
+                title="Banner Ads"
+              />
+            </div>
 
-            {/* Opinion Article */}
-            <ArticleCard
-              variant="sidebar"
-              category="OPINION"
-              categoryColor="#eab308"
-              title="Democratic Party politician calls Prabowo 'cardboard general'"
-              author="JOHN DOE"
-              date="August 10, 2018"
-              excerpt="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life..."
-              image="https://jnews.io/citynews/wp-content/uploads/sites/47/2018/06/demo-49-350x250.jpg"
-            />
+            {/* Right Sidebar Articles - 2 columns on tablet, 1 on mobile */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
+              {/* Opinion Article */}
+              <CompactArticleCard
+                category="OPINION"
+                categoryColor="#eab308"
+                title="Democratic Party politician calls Prabowo 'cardboard general'"
+                author="JOHN DOE"
+                date="August 10, 2018"
+                excerpt="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life..."
+                image="https://jnews.io/citynews/wp-content/uploads/sites/47/2018/06/demo-24-350x250.jpg"
+                badgePosition="top-left"
+              />
 
-            {/* Lifestyle Article */}
-            <ArticleCard
-              variant="sidebar"
-              category="LIFESTYLE"
-              categoryColor="#ec4899"
-              title="Google tracks location data even when users turn service off"
-              author="JOHN DOE"
-              date="August 14, 2018"
-              excerpt="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life..."
-              image="/api/placeholder/400/250"
-            />
+              {/* Lifestyle Article */}
+              <CompactArticleCard
+                category="LIFESTYLE"
+                categoryColor="#ec4899"
+                title="Google tracks location data even when users turn service off"
+                author="JOHN DOE"
+                date="August 14, 2018"
+                excerpt="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life..."
+                image="https://jnews.io/citynews/wp-content/uploads/sites/47/2018/06/demo-49-350x250.jpg"
+                badgePosition="top-left"
+              />
+            </div>
           </aside>
         </div>
       </div>

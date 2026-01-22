@@ -40,7 +40,7 @@ export default function ArticleCard({
        ========================= */
     if (variant === 'featured') {
         return (
-            <article className="relative mb-8 bg-white shadow-lg">
+            <article className="relative mb-8 bg-white shadow-sm">
                 {/* Image */}
                 <div className="relative w-full aspect-[2/1] overflow-hidden">
                     <img
@@ -89,7 +89,7 @@ export default function ArticleCard({
                             )}
 
                             {date && (
-                                <div className='flex'>
+                                <div className='flex item-center'>
                                     
                                     <Calendar className="w-3 h-3" />
                                     <span>{date}</span>
@@ -97,7 +97,7 @@ export default function ArticleCard({
                             )}
 
                             {commentCount !== undefined && (
-                                <div className='flex'>
+                                <div className='flex item-center'>
                                     
                                     <MessageCircle className="w-3 h-3" />
                                     <span>{commentCount}</span>
