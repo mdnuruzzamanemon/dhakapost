@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import SectionHeading from './SectionHeading';
 
 interface OpinionSidebarProps {
     articles: string[];
@@ -9,32 +10,7 @@ interface OpinionSidebarProps {
 export default function OpinionSidebar({ articles }: OpinionSidebarProps) {
     return (
         <div className="bg-white p-5">
-            <div className="relative mb-4 pb-[2px]">
-                <h2
-                    className="text-base font-bold pb-2 inline-block relative z-10"
-                    style={{
-                        color: '#010101'
-                    }}
-                >
-                    Opinion
-                </h2>
-                {/* Full-width lighter border */}
-                <div
-                    className="absolute bottom-0 left-0 right-0 h-[2px]"
-                    style={{
-                        backgroundColor: 'rgba(47, 47, 47, 0.2)'
-                    }}
-                />
-                {/* Bold solid border on top - 30px width */}
-                <div
-                    className="absolute left-0 h-[2px]"
-                    style={{
-                        width: '30px',
-                        backgroundColor: '#2f2f2f',
-                        bottom: '0px'
-                    }}
-                />
-            </div>
+            <SectionHeading title="Opinion" />
             <ul className="mt-6">
                 {articles.map((article, index) => (
                     <li
