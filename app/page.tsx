@@ -129,9 +129,8 @@ export default function Home() {
           <aside className="lg:col-span-3 space-y-6">
             {/* Banner Ad */}
             <BannerAd
-              image="/api/placeholder/400/250"
+              image="https://jnews.io/citynews/wp-content/uploads/sites/47/2018/08/banner-ad-345x345.jpg"
               title="Banner Ads"
-              buttonText="LEARN MORE"
             />
 
             {/* Opinion Article */}
@@ -143,7 +142,7 @@ export default function Home() {
               author="JOHN DOE"
               date="August 10, 2018"
               excerpt="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life..."
-              image="/api/placeholder/400/250"
+              image="https://jnews.io/citynews/wp-content/uploads/sites/47/2018/06/demo-49-350x250.jpg"
             />
 
             {/* Lifestyle Article */}
