@@ -31,27 +31,27 @@ const carouselArticles = [
 const latestArticles = [
   {
     id: 1,
-    image: '/api/placeholder/90/70',
+    image: 'https://jnews.io/citynews/wp-content/uploads/sites/47/2018/06/demo-25-120x86.jpg',
     title: 'Unconventional Workouts That Torch Fat And Sculpt Muscle'
   },
   {
     id: 2,
-    image: '/api/placeholder/90/70',
+    image: 'https://jnews.io/citynews/wp-content/uploads/sites/47/2018/06/demo-30-120x86.jpg',
     title: 'Millions of Indigenous People May Lose Voting Rights: Alliance'
   },
   {
     id: 3,
-    image: '/api/placeholder/90/70',
+    image: 'https://jnews.io/citynews/wp-content/uploads/sites/47/2018/06/demo-48-120x86.jpg',
     title: 'Crismonita Dwi Putri, RI\'s Track Cycling Athlete for Asian Games'
   },
   {
     id: 4,
-    image: '/api/placeholder/90/70',
+    image: 'https://jnews.io/citynews/wp-content/uploads/sites/47/2018/06/demo-32-120x86.jpg',
     title: 'President Joko "Jokowi" Widodo Refuses to Sign MD3 Law'
   },
   {
     id: 5,
-    image: '/api/placeholder/90/70',
+    image: 'https://jnews.io/citynews/wp-content/uploads/sites/47/2018/06/demo-33-120x86.jpg',
     title: 'Garuda operates larger planes for Jakarta-Palembang route'
   }
 ];
@@ -100,7 +100,7 @@ export default function Home() {
               date="February 17, 2020"
               commentCount={0}
               excerpt="When we get out of the glass bottle of our ego and when we escape like the squirrels in the..."
-              image="/api/placeholder/800/500"
+              image="https://jnews.io/citynews/wp-content/uploads/sites/47/2018/06/demo-34-750x375.jpg"
               showReadMore={true}
             />
 
